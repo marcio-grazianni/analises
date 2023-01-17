@@ -1,30 +1,43 @@
+Características do projeto:
+Python - 3.11
+Django - 4.1
+Postgresql - 15
+
+empresa
+
 usuario
 
 tipo
   descricao * (Nova tarefa, Correção, Análise)
 
 situacao
-  descricao * (A fazer (A), Fazendo (A), Feito (F), Testando (F))
+  descricao * (A fazer (A), Fazendo (A), Feito (F), Testando (F), Testado (F))
   situacao * (Em aberto, Fechado)
 
 prioridade
   descricao * (Baixa, Média, Alta)
 
 projeto
-  descricao *
+  descricao * (Simples Varejo, Prático NF-e, Gerenciador do Simples, Gerenciador do Prático NF-e)
 
 tarefa
-  usuario_criador *
+  projeto *
+  usuario_criador * Desabilitado
   data_tarefa *
   hora_tarefa *
   tipo *
   titulo varchar(200) *
-  descricao * text
+  descricao * text (Fonte monoespaçada)
   situacao *
   prioridade *
   usuario_atribuido
+  versao varchar(30)
 
   descricao_novidades text
+
+  data_inicial
+  hora_inicial
+
   data_conclusao
   hora_conclusao
 

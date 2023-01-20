@@ -8,7 +8,7 @@ empresa
 usuario
 
 tipo
-  descricao * (Nova tarefa, Correção, Análise)
+  descricao * (Nova Tarefa, Correção, Análise)
 
 situacao
   descricao * (A fazer (A), Fazendo (A), Feito (F), Testando (F), Testado (F))
@@ -18,7 +18,7 @@ prioridade
   descricao * (Baixa, Média, Alta)
 
 projeto
-  descricao * (Simples Varejo, Prático NF-e, Gerenciador do Simples, Gerenciador do Prático NF-e)
+  descricao * (Simples Varejo, Prático NF-e, Gerenciador do Simples Varejo, Gerenciador do Prático NF-e)
 
 tarefa
   projeto *
